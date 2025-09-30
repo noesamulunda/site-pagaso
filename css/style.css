@@ -307,12 +307,12 @@
     box-shadow:none;
     z-index: 4;
      margin-top: 0px;
+     box-shadow: 0px 0px 44.2px 0px #FFDA61;
+   border: 1px solid #fffad7; 
     
     }
 
-    .btn-agent:hover{
-   box-shadow: none;
-   border: none; } 
+     
 
 
 
@@ -419,7 +419,7 @@
       gap: 0.5rem;
       white-space: nowrap;
       margin-right: 10px !important;
-       line-height: 120%;
+       line-height: 145%;
       
     }
     .dot {
@@ -456,6 +456,7 @@
 
       #envolver{
       margin-top: -30px;
+      height: auto;
     }
 
 
@@ -469,15 +470,17 @@
         gap: 0.5rem;
         white-space: nowrap;
         margin-right: 10px !important;
-        line-height: 120%;
+        line-height: 145%;
         
       }
 
       .mySwiper1 .swiper-wrapper {
         animation: slideRightToLeft 5s linear infinite; /* mais rápido */
+      
       }
       .mySwiper2 .swiper-wrapper {
         animation: slideLeftToRight 5s linear infinite; /* mais rápido */
+       
 
         
       }
@@ -904,10 +907,8 @@
   display:inline-flex;       
   align-items:center;
   gap:32px;
-
-  border-radius:24px;
+  border-radius:40px;
   padding:40px 0 40px 44px;
-
   background-image: url("../imagem/comecar.png"); /* a imagem final do card */
   background-size: cover;
   background-position: center;
@@ -1600,10 +1601,14 @@
   .footer-col:nth-child(4) ul {
     grid-column: 2;
     text-align: left;
-    margin-top: -108px; /* sobe até altura do Margens de Lucro */
+    margin-top: -100px; /* sobe até altura do Margens de Lucro */
     margin-bottom: 120px;
     margin-left: -43px; /* encosta mais à esquerda */
+   
   }
+   .ct{
+    margin-top: -25px;
+   }
 
   /* Linha 3 → Contactos ocupa largura toda */
   .footer-col:nth-child(1) {
