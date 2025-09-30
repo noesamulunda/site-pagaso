@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PagaSó - Facilita Bué</title>
+  <link rel="icon" href="imagem/fav-icon.png">
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Opcional: Bootstrap icons (se quiser usar ícones) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ 
+<!-- NAVBAR (transparente) -->
+<nav class="navbar fixed-top navbar-expand-lg" id="navbar-fixo-top">
+
+  <div class="container" id="nav-box">
+    
+
+        <a class="navbar-brand d-flex align-items-center me-3" href="index.html">
+            <!-- substitua por sua logo -->
+            <img src="imagem/logo.svg" alt="logo" class="logo-img">
+        </a>
+
+        <!-- Toggler (aparece em mobile) -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+            <!--span class="navbar-toggler-icon"></span-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+     
+      <!-- Links / Menu (centro) -->
+      <div class="collapse navbar-collapse justify-content-center " id="menuNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre Nós</a></li>
+          <li class="nav-item"><a class="nav-link" href="#vantagem">Vantagens</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servico">Serviços</a></li>
+
+          <!-- DROPDOWN AGENTES (custom) -->
+          <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="agentesMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Agentes <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu custom-dropdown" aria-labelledby="agentesMenu">
+                    <div class="menu-inner">
+                        
+                        <li>
+                            <a class="dropdown-item-custom" href="https://app.pagaso.ao/criar-conta" target="_blank">
+                            <span class="icon-circle"><i class="fa-solid fa-user"></i></span>
+                            <span>Torne-se Agente</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item-custom" href="servico.html">
+                            <span class="icon-circle"><i class="fa-solid fa-percent"></i></span>
+                            <span>Margens de Lucro</span>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </li>
+
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQs</a></li>
+
+        </ul>
+
+      </div>
+
+      <!-- Botão Entrar (direita) -->
+      <div class="ms-3 ms-lg-4 d-none d-lg-block">
+        <a class="btn btn-outline-login" href="https://pagaso.co.ao/login" target="_blank"><i class="bi bi-person-fill me-2"></i>Entrar</a>
+      </div>
+
+  </div>
+
+</nav>
+
+<!-- HERO CAROUSEL -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel"-->
+    
+  <!-- Custom indicators (pílula branca com dots) -->
+  <!-- Indicadores -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active hero-slide" >
+      <div class="overlay"></div>
+
+      <div class="container h-100 d-flex align-items-center">
+        <div class="hero-content text-white">
+          <h1 class="display-5 fw-bold">A plataforma Nº1 de recargas em Angola!</h1>
+          <p class="lead mb-4">Venda recargas de Telefone, TV, Internet, Energia, Apostas Desportivas e muito mais e ganhe em cada venda efectuada!</p>
+          <a href="https://app.pagaso.ao/criar-conta" target="_blank" class="btn btn-agent btn-lg"><i class="bi bi-person-fill me-2"></i>Torne-se Agente!</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item hero-slide" >
+      <div class="overlay"></div>
+
+      <div class="container h-100 d-flex align-items-center">
+        <div class="hero-content text-white">
+          <h1 class="display-5 fw-bold">A plataforma Nº1 de recargas em Angola!</h1>
+          <p class="lead mb-4">Venda recargas de Telefone, TV, Internet, Energia, Apostas Desportivas e muito mais e ganhe em cada venda efectuada!</p>
+          <a href="https://app.pagaso.ao/criar-conta" target="_blank" class="btn btn-agent btn-lg"><i class="bi bi-person-fill me-2"></i>Torne-se Agente!</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item hero-slide" >
+      <div class="overlay"></div>
+
+      <div class="container h-100 d-flex align-items-center">
+        <div class="hero-content text-white">
+          <h1 class="display-5 fw-bold">A plataforma Nº1 de recargas em Angola!</h1>
+          <p class="lead mb-4">Venda recargas de Telefone, TV, Internet, Energia, Apostas Desportivas e muito mais e ganhe em cada venda efectuada!</p>
+          <a href="https://app.pagaso.ao/criar-conta" target="_blank" class="btn btn-agent btn-lg"><i class="bi bi-person-fill me-2"></i>Torne-se Agente!</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container-fluid py-5" id="envolver">
+
+  <!-- Primeira linha (esquerda) -->
+  <div class="swiper mySwiper1">
+    <div class="swiper-wrapper">
+      <!-- duplicar conteúdo para efeito infinito -->
+      <div class="swiper-slide marquee-text"><span class="dot">•</span> Apostas Desportivas </div>
+      <div class="swiper-slide marquee-text"><span class="dot">•</span> Streaming </div>
+      <div class="swiper-slide marquee-text"><span class="dot">•</span> Ingressos </div>
+      
+
+      <!-- duplicar -->
+      <div class="swiper-slide marquee-text"><span class="dot">•</span> Apostas Desportivas </div>
+      <div class="swiper-slide marquee-text"> <span class="dot">•</span> Streaming </div>
+      <div class="swiper-slide marquee-text"><span class="dot">•</span> Ingressos </div>
+    </div>
+  </div>
+
+  <!-- Segunda linha (direita) -->
+  <div class="swiper mySwiper2">
+    <div class="swiper-wrapper">
+      <!-- duplicar conteúdo -->
+      <div class="swiper-slide marquee-text"><span class="dot">•</span> Recargas </div>
+      <div class="swiper-slide marquee-text"><span class="dot">•</span> Televisão </div>
+      <div class="swiper-slide marquee-text"><span class="dot">•</span> Internet </div>
+      <div class="swiper-slide marquee-text"><span class="dot">•</span> Energia </div>
+
+      <!-- duplicar -->
+      <div class="swiper-slide marquee-text"><span class="dot">•</span> Recargas </div>
+      <div class="swiper-slide marquee-text"><span class="dot">•</span> Televisão </div>
+      <div class="swiper-slide marquee-text"><span class="dot">•</span> Internet </div>
+      <div class="swiper-slide marquee-text"><span class="dot">•</span> Energia </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="container" id="sobre">
+
+  <div class="mt-sobre" >
+
+    <div class="col-image">
+
+      <img src="imagem/sobre11.png">
+
+    </div>
+
+    <div class="col-texto">
+
+      <h1 class="title-sobre">Quem Somos?</h1>
+      <p class="text-sobre">
+        A <span>PagaSó</span> é uma marca da <span>TIV-Tecnologia</span>, com mais de <span>10 anos de experiência</span> na área de vendas e 
+        distribuição de recargas. A PagaSó disponibiliza uma plataforma digital pensada 
+        para facilitar o dia a dia dos Angolanos, 
+        tornando simples e acessível o acesso a recargas e pagamentos
+      </p>
+      <p class="text-sobre">
+        Oferecemos um dos <span>maiores ecossistemas de transações electrónicas do país</span>, com recargas de Telefone, TV, 
+        Internet, Energia, Apostas e muito mais, tudo num só lugar.
+         Ligamos grandes marcas a milhares de agentes e ajudamos a 
+         rentabilizar cada ponto de venda.
+      </p>
+
+      <p class="text-sobre">
+        Com a PagaSó, o teu negócio cresce todos os dias. <br>
+        <span>PagaSó - Facilita bué!</span>
+      </p>
+
+    </div>
+
+  </div>
+  
+</div>
+
+<section class="vantagens-section" id="vantagem">
+  <!-- SHAPES de fundo -->
+  <div class="bg-shapes" aria-hidden="true">
+    <span class="shape tl-arc"></span>
+    <span class="shape tr-big"></span>
+    
+    <span class="shape br-hill"></span>
+    
+  </div>
+
+  <div class="container text-center vantagens-title">
+    <h2 class="fw-bold mb-3">Mais Vantagens</h2>
+    <p class="mb-5 vantagens-sub">Motivos para escolher a PagaSó!</p>
+  </div>
+
+  <div class="container">
+    <div class="vantagens-grid align-items-center">
+      <!-- Esquerda -->
+      <div class=" d-flex flex-column gap-4">
+        <div class="vantagem-card">
+          <img src="img-webp/mapa-angola.webp" alt="Presença Nacional">
+          <h5>Presença Nacional</h5>
+          <p>A PagaSó está em Supermercados, Lojas, Cantinas, Farmácias e muito mais por todo o país.</p>
+        </div>
+        <div class="vantagem-card">
+          <img src="img-webp/pc.webp" alt="Plataforma Rápida">
+          <h5>Plataforma Rápida e Intuitiva</h5>
+          <p>Atenda clientes com rapidez e sem complicações, realiza as tuas vendas com praticidade.</p>
+        </div>
+      </div>
+
+      <!-- Centro (telefone) -->
+      <div class="text-center">
+        <img src="imagem/celular.png" class="img-fluid celular" alt="App PagaSó">
+      </div>
+
+      <!-- Direita -->
+      <div class="d-flex flex-column gap-4">
+        <div class="vantagem-card">
+          <img src="img-webp/moeda.webp" alt="Ganhos a Cada Venda">
+          <h5>Ganhos a Cada Venda</h5>
+          <p>Revenda recargas em tempo real com margem de lucro garantida.</p>
+        </div>
+        <div class="vantagem-card">
+          <img src="img-webp/call-center.webp" alt="Suporte Dedicado">
+          <h5>Suporte Dedicado</h5>
+          <p>Atendimento eficiente para responder às demandas dos clientes no tempo adequado.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Swiper (mobile) -->
+    <div class="swiper slider-card-swipper" style="z-index: 5;">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="vantagem-card">
+            <img src="img-webp/mapa-angola.webp" alt="Presença Nacional">
+            <h5>Presença Nacional</h5>
+            <p>A PagaSó está em Supermercados, Lojas, Cantinas, Farmácias e muito mais por todo o país.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="vantagem-card">
+            <img src="img-webp/pc.webp" alt="Plataforma Rápida">
+            <h5>Plataforma Rápida e Intuitiva</h5>
+            <p>Atenda clientes com rapidez e sem complicações, realiza as tuas vendas com praticidade.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="vantagem-card">
+            <img src="img-webp/moeda.webp" alt="Ganhos a Cada Venda">
+            <h5>Ganhos a Cada Venda</h5>
+            <p>Revenda recargas em tempo real com margem de lucro garantida.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="vantagem-card">
+            <img src="img-webp/call-center.webp" alt="Suporte Dedicado">
+            <h5>Suporte Dedicado</h5>
+            <p>Atendimento eficiente para responder às demandas dos clientes no tempo adequado.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- Centro (telefone - só no mobile) -->
+    <div class="col-12 text-center d-block d-lg-none mt-3" style="position: relative; z-index: 2;">
+      <img src="imagem/celular.png">
+    </div>
+  </div>
+</section>
+
+<div class="section-servico" id="servico">
+  <h6 class="title-servico">Serviços Disponíveis</h6>
+  <p class="text-servico">São <span>+15 Serviços</span> que podes vender com a PagaSó! <br>Tudo isso Disponível num só lugar.</p>
+
+  <div class="container-fluid" id="fundo-transparent">
+    <!-- Linha com dois carrosseis -->
+    <div class="row" >
+      <!-- Carrossel de cima -->
+      <div class="col-12 mb-nada">
+        <div class="carousel-container horizontal">
+          <div class="scroll">
+            <!-- Seus cards -->
+            <div class="card-custom"><img src="img-webp/ende.webp"><h5>ENDE</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/unitel.webp"><h5>Unitel</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/afribet.webp"><h5>Africell</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/movicel.webp"><h5>Movicel</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/netflix.webp"><h5>Netflix</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/zap.webp"><h5>Zap</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/zap-fibra.webp"><h5>Zap Fibra</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="imagem/zap-wifi.png"><h5>Zap Wifi</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/soeventos.webp"><h5>Só Eventos</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+
+            <!-- Duplicados para looping -->
+            <div class="card-custom"><img src="img-webp/ende.webp"><h5>ENDE</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/unitel.webp"><h5>Unitel</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/afribet.webp"><h5>Africell</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/movicel.webp"><h5>Movicel</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/netflix.webp"><h5>Netflix</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/zap.webp"><h5>Zap</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/zap-fibra.webp"><h5>Zap Fibra</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="imagem/zap-wifi.png"><h5>Zap Wifi</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/soeventos.webp"><h5>Só Eventos</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carrossel de baixo -->
+      <div class="col-12 mb-ns">
+        <div class="carousel-container horizontal">
+          <div class="scroll reverse">
+
+            <div class="card-custom"><img src="img-webp/bantu.webp"><h5>Bantu Bet</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/kwanzabet.webp"><h5>Kwanza Bet</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/premierbet.webp"><h5>Premier Bet</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/888-bet.webp"><h5>888 Bet</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/afribet.webp"><h5>Afribet</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/mobet.webp"><h5>Mobet</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/elephant.webp"><h5>Elephant Bet</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+
+            <!-- Duplicados -->
+
+            <div class="card-custom"><img src="img-webp/bantu.webp"><h5>Bantu Bet</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/kwanzabet.webp"><h5>Kwanza Bet</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/premierbet.webp"><h5>Premier Bet</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/888-bet.webp"><h5>888 Bet</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/afribet.webp"><h5>Afribet</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/mobet.webp"><h5>Mobet</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+            <div class="card-custom"><img src="img-webp/elephant.webp"><h5>Elephant Bet</h5><a href="servico.html">Ver Produto <i class="fas fa-arrow-right"></i></a></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- app -->
+<section class="hero-area">
+    <div class="hero-center">
+      <!-- Card único: a largura será definida pelo conteúdo (texto + celular) -->
+      <div class="promo-card">
+
+        <!-- shapes internos (se quiser manter) -->
+        <span class="shape-light" aria-hidden="true"></span>
+        <span class="shape-dark" aria-hidden="true"></span>
+        <span class="shape-base1"></span>
+        <span class="shape-base2" aria-hidden="true"></span>
+
+        <!-- Texto (lado esquerdo) -->
+        <div class="promo-text">
+          <h1>Começa agora<br>mesmo a vender<br>com a PagaSó! <img src="imagem/cara.png" class="img-cara"></h1>
+          <p>Disponível nas plataformas <span>Android, iOS e Web</span>. Junta-te a milhares de agentes e começa a ganhar!</p>
+
+          <div class="store-badges d-flex">
+            <a href="#"><img src="img/google-play.svg" alt="Google Play"></a>
+            <a href="#"><img src="img/app-story.svg" alt="App Store"></a>
+            <a href="#"><img src="img/app-paga-so.svg" alt="Web App"></a>
+          </div>
+
+        </div>
+
+        <!-- Celular (lado direito) — sem padding entre a imagem e a borda interna do card -->
+        <div class="promo-phone">
+          <img src="img-webp/sobre2.webp" alt="Imagem do celular" class="img-fluid">
+        </div>
+
+      </div>
+    </div>
+</section>
+
+<!-- Area depoimento-->
+ <section class="testimonials" id="depoimento">
+    <h2>Depoimentos</h2>
+    <p class="subtitle">
+      O que dizem os <span>nossos agentes!</span> 
+      Agentes PagaSó por todo o país partilham a sua experiência com a plataforma.
+    </p>
+    
+
+    <div class="avatars">
+    <div class="avatar-container">
+      <img src="imagem/t1.png" class="avatar" alt="Avatar">
+      <div class="tooltip-custom">Russel Liro Hilário<span>Agente</span></div>
+    </div>
+    <div class="avatar-container">
+      <img src="imagem/t2.png" class="avatar" alt="Avatar">
+      <div class="tooltip-custom">Diaz Khofee<span>Agente</span></div>
+    </div>
+    <div class="avatar-container">
+      <img src="imagem/t4.png" class="avatar" alt="Avatar">
+      <div class="tooltip-custom">Bernardo Hamuyela Nado<span>Agente</span></div>
+    </div>
+    <div class="avatar-container">
+      <img src="imagem/t5.png" class="avatar" alt="Avatar">
+      <div class="tooltip-custom">Geraldo Dos Prazeres<span>Agente</span></div>
+    </div>
+
+    <div class="avatar-container">
+      <div class="avatar avatar-icon">
+        <i class="fas fa-users"></i>
+        <div class="tooltip-custom">Nossos Agentes</div>
+      </div>
+  
+    </div>
+        
+  </div>
+
+    <!-- === TRACK 1 (vai para a esquerda: RIGHT -> LEFT visualmente) === -->
+    <div class="testimonial-track">
+      <div class="testimonial-slider">
+        <!-- === UNIQUE SET (5 cards) === -->
+
+        <!-- EXEMPLO DE UM CARD idêntico à imagem -->
+        <article class="t-card">
+         
+          <div class="preenchimento">
+
+            <img class="t-avatar" src="imagem/maezinha.png" alt="Avatar">
+
+            <div class="t-content">
+              <p class="t-name">Mariazinha Zinha</p>
+              <p class="t-text">Com a PagaSó a vida tá facilitada 👌🏽👌🏽👌🏽</p>
+              <p class="t-via">Via Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </article>
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+
+            <img class="t-avatar" src="imagem/t1.png" alt="Avatar">
+
+            <div class="t-content">
+              <p class="t-name">Russel Liro Hilário</p>
+              <p class="t-text">Uma plataforma cheia de vantagens!  👌💰</p>
+              <p class="t-via">Via Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </article>
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+
+            <img class="t-avatar" src="imagem/t5.png" alt="Avatar">
+
+            <div class="t-content">
+              <p class="t-name">Geraldo Dos Prazeres</p>
+              <p class="t-text">Recomendo, a quem ainda não faz parte desta grande família que se junte. 🙌🏾 🇦🇴</p>
+              <p class="t-via">Via Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </article>
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+
+            <img class="t-avatar" src="imagem/t4.png" alt="Avatar">
+
+            <div class="t-content">
+              <p class="t-name">Bernardo Hamuyela Nado</p>
+              <p class="t-text">O melhor aplicativo que posso confiar. 👌🏾</p>
+              <p class="t-via">Via Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </article>
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+            <div class="t-avatar-texto-novo">
+              SS
+            </div>
+            <div class="t-content">
+              <p class="t-name">Sealtiel Silva</p>
+              <p class="t-text">Super útil esse app, achei muito bom, é um dos melhores apps para inciar um negócio 🇦🇴</p>
+              <p class="t-via">Via Google PlayStore</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </article>
+
+        <!-- === DUPLICAÇÃO EXACTA (mesmos 5 cards novamente) === -->
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+
+            <img class="t-avatar" src="imagem/maezinha.png" alt="Avatar">
+
+            <div class="t-content">
+              <p class="t-name">Mariazinha Zinha</p>
+              <p class="t-text">Com a PagaSó a vida tá facilitada 👌🏽👌🏽👌🏽</p>
+              <p class="t-via">Via Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </article>
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+
+            <img class="t-avatar" src="imagem/t1.png" alt="Avatar">
+
+            <div class="t-content">
+              <p class="t-name">Russel Liro Hilário</p>
+              <p class="t-text">Uma plataforma cheia de vantagens!  👌💰</p>
+              <p class="t-via">Via Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </article>
+
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+
+            <img class="t-avatar" src="imagem/t5.png" alt="Avatar">
+
+            <div class="t-content">
+              <p class="t-name">Geraldo Dos Prazeres</p>
+              <p class="t-text">Recomendo, a quem ainda não faz parte desta grande família que se junte. 🙌🏾 🇦🇴</p>
+              <p class="t-via">Via Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </article>
+
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+
+            <img class="t-avatar" src="imagem/t4.png" alt="Avatar">
+
+            <div class="t-content">
+              <p class="t-name">Bernardo Hamuyela Nado</p>
+              <p class="t-text">O melhor aplicativo que posso confiar. 👌🏾</p>
+              <p class="t-via">Via Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </article>
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+            <div class="t-avatar-texto-novo">
+              SS
+            </div>
+            <div class="t-content">
+              <p class="t-name">Sealtiel Silva</p>
+              <p class="t-text">Super útil esse app, achei muito bom, é um dos melhores apps para inciar um negócio 🇦🇴</p>
+              <p class="t-via">Via Google PlayStore</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </article>
+
+
+      </div>
+    </div>
+
+    <!-- === TRACK 2 (vai para a direita: LEFT -> RIGHT visualmente) === -->
+
+    <div class="testimonial-track" >
+
+      <div class="testimonial-slider reverse">
+
+        <!-- UNIQUE SET (5 cards) -->
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+
+            <img class="t-avatar" src="imagem/t7.png" alt="Avatar">
+
+            <div class="t-content">
+              <p class="t-name">Madalena Castro Gomes Jezreel</p>
+              <p class="t-text">Facilita Bué 💸❤️</p>
+              <p class="t-via">Via Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+           <i class="fas fa-star ns"></i>
+          </div>
+
+        </article>
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+
+            <img class="t-avatar" src="imagem/t2.png" alt="Avatar">
+
+            <div class="t-content">
+              <p class="t-name">Diaz Khofee</p>
+              <p class="t-text">O novo formato está óptimo... Gostei da Mudança.</p>
+              <p class="t-via">Via Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </article>
+
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+
+            <img class="t-avatar" src="imagem/t6.png" alt="Avatar">
+
+            <div class="t-content">
+              <p class="t-name">Augusto Hugo</p>
+              <p class="t-text">A PagaSó é a escolha certa. ✅💰</p>
+              <p class="t-via">Via Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star ns"></i>
+          </div>
+
+        </article>
+
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+
+            <img class="t-avatar" src="imagem/t3.png" alt="Avatar">
+
+            <div class="t-content">
+              <p class="t-name">Madí Fernando</p>
+              <p class="t-text">A diversão mora aqui, Facilita Bué 👍🏿</p>
+              <p class="t-via">Via Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star ns"></i>
+          </div>
+
+        </article>
+
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+            <div class="t-avatar-texto-novo">
+              JE
+            </div>
+            <div class="t-content">
+              <p class="t-name">João Eduardo Bumba</p>
+              <p class="t-text">Sinceramente o app é óptimo para negócio, é tão eficaz e simplificado</p>
+              <p class="t-via">Via Google PlayStore</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </article>
+
+
+
+        <!-- DUPLICAÇÃO (mesmos 5 cards) -->
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+
+            <img class="t-avatar" src="imagem/t7.png" alt="Avatar">
+
+            <div class="t-content">
+              <p class="t-name">Madalena Castro Gomes Jezreel</p>
+              <p class="t-text">Facilita Bué 💸❤️</p>
+              <p class="t-via">Via Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+           <i class="fas fa-star ns"></i>
+          </div>
+
+        </article>
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+
+            <img class="t-avatar" src="imagem/t2.png" alt="Avatar">
+
+            <div class="t-content">
+              <p class="t-name">Diaz Khofee</p>
+              <p class="t-text">O novo formato está óptimo... Gostei da Mudança.</p>
+              <p class="t-via">Via Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </article>
+
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+
+            <img class="t-avatar" src="imagem/t6.png" alt="Avatar">
+
+            <div class="t-content">
+              <p class="t-name">Augusto Hugo</p>
+              <p class="t-text">A PagaSó é a escolha certa. ✅💰</p>
+              <p class="t-via">Via Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star ns"></i>
+          </div>
+
+        </article>
+
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+
+            <img class="t-avatar" src="imagem/t3.png" alt="Avatar">
+
+            <div class="t-content">
+              <p class="t-name">Madí Fernando</p>
+              <p class="t-text">A diversão mora aqui, Facilita Bué 👍🏿</p>
+              <p class="t-via">Via Facebook</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star ns"></i>
+           
+          </div>
+
+        </article>
+
+
+        <article class="t-card">
+         
+          <div class="preenchimento">
+            <div class="t-avatar-texto-novo">
+              JE
+            </div>
+            <div class="t-content">
+              <p class="t-name">João Eduardo Bumba</p>
+              <p class="t-text">Sinceramente o app é óptimo para negócio, é tão eficaz e simplificado</p>
+              <p class="t-via">Via Google PlayStore</p>
+            </div>
+
+          </div>
+
+          <div class="t-stars" aria-hidden="true">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  
+  <!-- Dúvidas frequentes -->
+<section class="faq-section" aria-label="Dúvidas Frequentes" id="faq">
+  <div class="faq-wrap">
+    <h2 class="faq-title">Dúvidas Frequentes</h2>
+
+    <div class="faq-top">
+      <a href="duvuda.html" aria-label="Ver todas">Ver todas <span style="margin-left:6px;"><i class="fas fa-arrow-right"></i></span></a>
+    </div>
+
+    <div class="faq-list" id="faqList">
+
+      <!-- Item 1: aberto por padrão -->
+      <div class="faq-item open" data-index="1">
+        <div class="faq-head" tabindex="0" role="button" aria-expanded="true">
+          Como me torno um Agente PagaSó?
+          <i class="faq-icon fa-solid fa-minus"></i>
+        </div>
+        <div class="faq-body">
+          First, you need to know how much you can borrow. Knowing how much home you afford narrows down online home searching to suitable properties, thus no time is wasted considering homes that are not within your. (Pre-approvals also help prevent disappointment caused by falling in love unaffordable homes.)
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="faq-item" data-index="2">
+        <div class="faq-head" tabindex="0" role="button" aria-expanded="false">
+          Quais serviços estão disponíveis?
+          <i class="faq-icon fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-body">
+          Serviços de pagamentos, recargas, faturação, bilhética e outras integrações para agentes.
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="faq-item" data-index="3">
+        <div class="faq-head" tabindex="0" role="button" aria-expanded="false">
+          É necessário ter uma empresa para aderir?
+          <i class="faq-icon fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-body">
+          Não é obrigatório, mas a formalização facilita faturação e parcerias com grandes clientes.
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="faq-item" data-index="4">
+        <div class="faq-head" tabindex="0" role="button" aria-expanded="false">
+          Posso usar via computador?
+          <i class="faq-icon fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-body">
+          Sim — o painel é responsivo e foi pensado para telemóvel, tablet e computador.
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="faq-item" data-index="5">
+        <div class="faq-head" tabindex="0" role="button" aria-expanded="false">
+          Como obter lucros com a PagaSó?
+          <i class="faq-icon fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-body">
+          A margem depende do serviço; os agentes recebem comissões por transação registada no painel.
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="faq-item" data-index="5">
+        <div class="faq-head" tabindex="0" role="button" aria-expanded="false">
+          Como obter lucros com a PagaSó?
+          <i class="faq-icon fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-body">
+          A margem depende do serviço; os agentes recebem comissões por transação registada no painel.
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="faq-item" data-index="5">
+        <div class="faq-head" tabindex="0" role="button" aria-expanded="false">
+          Como obter lucros com a PagaSó?
+          <i class="faq-icon fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-body">
+          A margem depende do serviço; os agentes recebem comissões por transação registada no painel.
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+
+    <!-- LOGO NO TOPO (centralizada) -->
+    <div class="footer-logo-wrap">
+      <img src="imagem/logo.svg" alt="PagaSó" class="footer-logo" width="209.24" height="66" />
+    </div>
+
+    <!-- GRID DE COLUNAS ABAIXO DO LOGO -->
+    <div class="footer-grid">
+      <!-- Col 1: Contactos / Endereços -->
+      <div class="footer-col" id="footer-cont">
+        <ul class="footer-contacts">
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span><strong>E-mail</strong><br>pagaso@tiv-tecnologia.com</span>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span><strong>Endereço Luanda</strong><br>Luanda, Talatona, Dolce Vita, Edifício 02.</span>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span><strong>Endereço Benguela</strong><br>Benguela, Rua Domingos do Ó, Edifício Acácias (1º Andar).</span>
+          </li>
+          
+        </ul>
+        <ul class="d-flex mt-2" id="flex-d">
+          
+          <li>
+            <i class="fas fa-phone-volume"></i>
+            <span><strong>Apoio ao Cliente!</strong><br>+244 944 090 151</span>
+          </li>
+          <li>
+            <i class="fab fa-whatsapp-square"></i>
+            <span><strong>Whatsapp</strong><br>+244 944 090 151</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 2: Links -->
+      <div class="footer-col">
+        <h4>LINKS</h4>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#servico">Serviços</a></li>
+          <li><a href="#vantagem">Vantagens</a></li>
+          <li><a href="#depoimento">Depoimentos</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Agentes -->
+      <div class="footer-col">
+        <h4>AGENTES</h4>
+        <ul>
+          <li><a href="https://app.pagaso.ao/criar-conta">Tornar-se Agente</a></li>
+          <li><a href="#vantagem">Vantagens</a></li>
+          <li><a href="servico.html">Margens de Lucro</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Ajuda + Social -->
+      <div class="footer-col">
+        <h4>AJUDA</h4>
+        <ul>
+          <li><a href="contacto.html">Contactos</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+
+        <h4  class="ns11">SIGA-NOS!</h4>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/pagaso.angola/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram-square"></i></a>
+          <a href="https://www.facebook.com/pagaso.angola/" target="_blank" aria-label="Facebook" class="cor"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://ao.linkedin.com/company/pagas%C3%B3?trk=ppro_cprof" target="_blank" aria-label="LinkedIn" class="cor"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+      <div class="footer-links">
+        <a href="termos.html">Termos e Condições</a>
+        <a href="politica.html">Política de privacidade</a>
+      </div>
+      <p>© 2025 Copyright PagaSó by TIV-Tecnologia, todos os direitos reservados, Made in<img src="imagem/band.png" alt="Angola" class="footer-flag" />
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/slider-swipper.js"></script>
+<script>
+  new Swiper(".slider-card-swipper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 20,
+    initialSlide: 2, // começa pelo slide do meio (ajuste conforme quantidade de slides)
+     loop: true, 
+     autoplay: {
+        delay: 3000,             // ⏳ muda a cada 3s
+        disableOnInteraction: false // continua mesmo após clicar/arrastar
+      },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+  });
+</script>
+
+<script>
+  document.querySelectorAll(".faq-head").forEach(head => {
+    head.addEventListener("click", () => {
+      const item = head.parentElement;
+      const icon = head.querySelector(".faq-icon");
+
+      if (item.classList.contains("open")) {
+        item.classList.remove("open");
+        head.setAttribute("aria-expanded", "false");
+        icon.classList.replace("fa-minus", "fa-plus");
+      } else {
+        // Fecha todos os outros
+        document.querySelectorAll(".faq-item").forEach(faq => {
+          faq.classList.remove("open");
+          faq.querySelector(".faq-head").setAttribute("aria-expanded", "false");
+          faq.querySelector(".faq-icon").classList.replace("fa-minus", "fa-plus");
+        });
+        // Abre o atual
+        item.classList.add("open");
+        head.setAttribute("aria-expanded", "true");
+        icon.classList.replace("fa-plus", "fa-minus");
+      }
+    });
+  });
+</script>
+
+<!--script>
+document.querySelectorAll('.nav-item.dropdown').forEach(item => {
+  const toggle = item.querySelector('.dropdown-toggle i');
+  
+  item.addEventListener('mouseenter', () => {
+    toggle.classList.remove('fa-chevron-down');
+    toggle.classList.add('fa-chevron-up');
+  });
+
+  item.addEventListener('mouseleave', () => {
+    toggle.classList.remove('fa-chevron-up');
+    toggle.classList.add('fa-chevron-down');
+  });
+});
+</script-->
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const dropdown = document.getElementById("agentesMenu");
+  const icon = dropdown.querySelector("i");
+
+  // Quando abrir o dropdown
+  dropdown.addEventListener("show.bs.dropdown", function () {
+    icon.classList.remove("fa-chevron-down");
+    icon.classList.add("fa-chevron-up");
+  });
+
+  // Quando fechar o dropdown
+  dropdown.addEventListener("hide.bs.dropdown", function () {
+    icon.classList.remove("fa-chevron-up");
+    icon.classList.add("fa-chevron-down");
+  });
+});
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>

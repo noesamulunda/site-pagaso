@@ -1,0 +1,298 @@
+.duvidas{
+    background-image: url('../imagem/sobre2.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+     width: 100%;              /* sempre ocupar a largura da tela */
+    aspect-ratio: 1440 / 457; /* mantém a proporção original */
+}
+
+.faq-section{background-color: #fff; margin-top: 75px;}
+
+.article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 177px;
+}
+
+.duvidas h6{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #fff;
+    margin-top: 12px;
+}
+
+
+
+@media (max-width: 768px){
+
+    .duvidas{
+        background-image: url('../imagem/sobre2-mobile.png');
+        width: 100%;              /* sempre ocupar a largura da tela */
+        aspect-ratio: 390 / 354; /* mantém a proporção original */
+    }
+    .duvidas img{
+        width: 87px;
+        height: 78px;
+        object-fit: cover;
+    }
+    .duvidas h6{font-size: 32px; width: 193px;margin: 0 auto; margin-top: 12px;}
+
+    .article{padding-top: 140px;}
+}
+
+.faq-wrap{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+/*Dúvidas*/
+
+ .card-duvidas {
+      position: relative;
+      border-radius: 15px;
+      overflow: visible;
+      padding: 25px;
+      width: 100%;
+      color: #fff;
+      background: url("../imagem/duvidas.png") no-repeat center center/contain; /* sua imagem de fundo */
+       max-width: 1120px; /* controla a largura máxima */
+       height: 291px;
+      margin: 0 auto;
+      
+    }
+
+    .card-duvidas .conteudo {
+      max-width: 60%;
+      padding-left: 40px;
+    }
+
+    .card-duvidas h2 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 120%;
+    }
+    .conteudo p{
+        font-size: 18px;
+        line-height: 160%;
+        font-weight: 400;
+        width: 420px;
+    }
+
+    .envolver-btn{
+        width: 305px;
+        padding-top: 5px;
+        padding-left: 7px;
+        border-radius: 24px;
+        background-color: #fff;
+    }
+    .card-duvidas .btn-contacto {
+    
+      color: #272727;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 160%;
+     
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    
+    }
+    .btn-contacto img{margin-right: 3px;}
+
+    /* imagem da direita */
+    .card-duvidas .img-direita {
+      position: absolute;
+      right: -60px;  /* faz sair para fora */
+      bottom: -70px; /* ajusta para sair também em baixo */
+      max-width: 40%;
+    }
+
+    @media (max-width: 992px) {
+
+        .card-duvidas {
+            position: relative;
+            border-radius: 15px;
+            overflow: visible;
+            padding: 35px;
+            width: 100%;
+            color: #fff;
+            background: url("../imagem/duvida-mobile.png") no-repeat center center/contain; /* sua imagem de fundo */
+            max-width: 100%; /* controla a largura máxima */
+            height: 618px;
+            margin: 0;
+            text-align: center;
+            margin-top: -45px;
+            
+        }
+      .card-duvidas .conteudo {
+        max-width: 100%;
+   
+        padding-left: 0px;
+        padding-top: 14px;
+        }
+      .card-duvidas .img-direita {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        margin-top: 35px;
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .envolver-btn{width: 284px; height: 42px; margin: auto;  padding-top: 11px; padding-left: 0;
+       }
+      .conteudo h2{
+        font-size: 32px;
+        margin-bottom: 15px;
+      }
+      .conteudo p{font-size: 16px; text-align: center; width: 284px; margin: auto; margin-bottom: 10px;}
+
+       .card-duvidas .btn-contacto{font-size: 13px;}
+
+      
+    }
+
+  
+    /*Contato*/
+
+    :root {
+      --brand-red: #BF181D;
+      --field-height: 52px;
+      --field-radius: 8px;
+    }
+
+    /* Contact list */
+    .contact-info i {
+      color: var(--brand-red);
+      font-size: 20px !important;
+      margin-right: 12px;
+      margin-top: 4px;
+      flex: 0 0 auto;
+    }
+    .contact-info .item { display:flex; }
+    .contact-info .item + .item { margin-top: 14px; }
+
+    /* Campos (altura e padding mantidos) */
+    .form-control,
+    .form-select {
+      height: var(--field-height);
+      padding: .75rem 1rem;
+      border-radius: var(--field-radius);
+      border: 1px solid #b0b7c3;
+    }
+    textarea.form-control {
+      height: auto;
+      min-height: 160px;
+      resize: vertical;
+      padding: 1rem;
+    }
+    .form-control::placeholder { color: #b7b7b7; }
+
+    /* Focus: apenas borda preta (sem glow) */
+    .form-control:focus,
+    .form-select:focus,
+    textarea.form-control:focus {
+      border-color: #262c2d !important;
+      box-shadow: none !important;
+      outline: none !important;
+    }
+
+    /* Labels (como na imagem) */
+    .form-label {
+      display: block;
+      margin-bottom: .35rem;
+      font-size: .9rem;
+      color: #6c757d;
+      font-weight: 500;
+    }
+
+    /* Botão enviar */
+    .btn-custom {
+      background: var(--brand-red);
+      color: #fff;
+      font-weight: 600;
+      border-radius: 14px;
+      padding: .8rem 1.4rem;
+      margin-top: 20px;
+    }
+    .btn-custom:hover { background: #900000; color: #fff; }
+    .btn-custom .bi { margin-right: .5rem; }
+    #fale{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 125%;
+    }
+    #frm{width: 544px;}
+   
+
+    #contato{margin-top: 85px; margin-bottom: 65px;}
+
+    @media screen and (max-width:768px) {
+        #frm{width: 95%; margin: auto;}
+
+         #contato{margin-top: 5px;}
+         #fale{
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 125%;
+            margin-bottom: 10px;
+        }
+        
+    }
+
+
+    /*termos*/
+    #termos{
+      width: 1110px;
+      margin: auto;
+      margin-top: 15px;
+    }
+    #termos h6{
+      font-size: 26px;
+      font-weight: 700;
+      text-align: justify;
+      line-height: 140%;
+    }
+    #termos p{
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 140%;
+      text-align: justify;
+      margin-bottom: 25px;
+    }
+
+        @media screen and (max-width:768px) {
+
+           #termos{
+              width: 90%;
+              margin: auto;
+              margin-top: 15px;
+            }
+            #termos h6{
+              font-size: 20px;
+              font-weight: 700;
+              text-align: justify;
+              line-height: 140%;
+            }
+            #termos p{
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 140%;
+              text-align: justify;
+              margin-bottom: 25px;
+            }
+
+        }
+
+
+  .custom-rotate {
+    display: inline-block;         /* necessário para transformar corretamente */
+    transform: rotate(45deg);      /* ajusta o grau como quiseres */
+    transform-origin: center;      /* garante rotação ao redor do centro */
+  }

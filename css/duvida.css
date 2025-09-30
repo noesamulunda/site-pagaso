@@ -1,0 +1,177 @@
+.duvidas{
+    
+    background-image: url('../imagem/sobre1.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;              /* sempre ocupar a largura da tela */
+    aspect-ratio: 1440 / 457; /* mantém a proporção original */
+}
+
+.faq-section{background-color: #fff; margin-top: 75px;}
+
+.article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 177px;
+}
+.duvidas h6{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 120%;
+    color: #fff;
+    margin-top: 12px;
+}
+
+
+
+@media (max-width: 768px){
+
+    .duvidas{
+        background-image: url('../imagem/sobre1-mobile.png');
+        width: 100%;              /* sempre ocupar a largura da tela */
+        aspect-ratio: 390 / 354; /* mantém a proporção original */
+    }
+    .duvidas img{
+        width: 87px;
+        height: 78px;
+        object-fit: cover;
+    }
+    .duvidas h6{font-size: 32px; width: 193px;margin: 0 auto; margin-top: 12px;}
+
+    .article{padding-top: 140px;}
+}
+
+.faq-wrap{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+/*Dúvidas*/
+
+ .card-duvidas {
+      position: relative;
+      border-radius: 15px;
+      overflow: visible;
+      padding: 25px;
+      width: 100%;
+      color: #fff;
+      background: url("../imagem/duvidas.png") no-repeat center center/contain; /* sua imagem de fundo */
+       max-width: 1120px; /* controla a largura máxima */
+       height: 291px;
+      margin: 0 auto;
+      
+    }
+
+    .card-duvidas .conteudo {
+      max-width: 60%;
+      padding-left: 40px;
+    }
+
+    .card-duvidas h2 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 120%;
+    }
+    .conteudo p{
+        font-size: 18px;
+        line-height: 160%;
+        font-weight: 400;
+        width: 420px;
+    }
+
+    .envolver-btn{
+        width: 305px;
+        padding-top: 5px;
+        padding-left: 7px;
+        border-radius: 24px;
+        background-color: #fff;
+    }
+    .card-duvidas .btn-contacto {
+    
+      color: #272727;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 160%;
+     
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    
+    }
+    .btn-contacto img{margin-right: 3px;}
+
+    /* imagem da direita */
+    .card-duvidas .img-direita {
+      position: absolute;
+      right: -60px;  /* faz sair para fora */
+      bottom: -70px; /* ajusta para sair também em baixo */
+      max-width: 40%;
+    }
+
+    @media (max-width: 992px) {
+
+        .card-duvidas {
+            position: relative;
+            border-radius: 15px;
+            overflow: visible;
+            padding: 35px;
+            width: 100%;
+            color: #fff;
+            background: url("../imagem/duvida-mobile.png") no-repeat center center/contain; /* sua imagem de fundo */
+            max-width: 100%; /* controla a largura máxima */
+            height: 618px;
+            margin: 0;
+            text-align: center;
+            margin-top: -45px;
+            
+        }
+      .card-duvidas .conteudo {
+        max-width: 100%;
+   
+        padding-left: 0px;
+        padding-top: 14px;
+        }
+      .card-duvidas .img-direita {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        margin-top: 35px;
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .envolver-btn{width: 284px; height: 42px; margin: auto;  padding-top: 11px; padding-left: 0;
+       }
+      .conteudo h2{
+        font-size: 32px;
+        margin-bottom: 15px;
+      }
+      .conteudo p{font-size: 16px; text-align: center; width: 284px; margin: auto; margin-bottom: 10px;}
+
+       .card-duvidas .btn-contacto{font-size: 13px;}
+
+      
+    }
+
+  
+    /*Contato*/
+
+    .contact-info i {
+      color: #b30000;
+      font-size: 1.3rem;
+      margin-right: 12px;
+      margin-top: 4px;
+    }
+    .btn-custom {
+      background-color: #b30000;
+      color: #fff;
+      font-weight: bold;
+    }
+    .btn-custom:hover {
+      background-color: #900000;
+      color: #fff;
+    }

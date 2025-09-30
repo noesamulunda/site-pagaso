@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PagaSó - Facilita Bué</title>
+  <link rel="icon" href="img/fav-icon.png">
+
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Opcional: Bootstrap icons (se quiser usar ícones) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/duvida.css">
+</head>
+<body>
+
+ 
+<!-- NAVBAR (transparente) -->
+<nav class="navbar fixed-top navbar-expand-lg" id="navbar-fixo-top">
+
+  <div class="container" id="nav-box">
+    
+
+        <a class="navbar-brand d-flex align-items-center me-3" href="index.html">
+            <!-- substitua por sua logo -->
+            <img src="imagem/logo.svg" alt="logo" class="logo-img">
+        </a>
+
+        <!-- Toggler (aparece em mobile) -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav" aria-controls="menuNav" aria-expanded="false" aria-label="Toggle navigation">
+            <!--span class="navbar-toggler-icon"></span-->
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+     
+      <!-- Links / Menu (centro) -->
+      <div class="collapse navbar-collapse justify-content-center " id="menuNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#sobre">Sobre Nós</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#vantagem">Vantagens</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#servico">Serviços</a></li>
+
+          <!-- DROPDOWN AGENTES (custom) -->
+          <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="agentesMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Agentes <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="dropdown-menu custom-dropdown" aria-labelledby="agentesMenu">
+                    <div class="menu-inner">
+                        
+                        <li>
+                            <a class="dropdown-item-custom" href="https://app.pagaso.ao/criar-conta" target="_blank">
+                            <span class="icon-circle"><i class="fa-solid fa-user"></i></span>
+                            <span>Torne-se Agente</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item-custom" href="servico.html">
+                            <span class="icon-circle"><i class="fa-solid fa-percent"></i></span>
+                            <span>Margens de Lucro</span>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+            </li>
+
+          <li class="nav-item"><a class="nav-link" href="index.html#faq">FAQs</a></li>
+
+        </ul>
+
+      </div>
+
+      <!-- Botão Entrar (direita) -->
+      <div class="ms-3 ms-lg-4 d-none d-lg-block">
+        <a class="btn btn-outline-login" href="https://pagaso.co.ao/login" target="_blank"><i class="bi bi-person-fill me-2"></i>Entrar</a>
+      </div>
+
+  </div>
+
+</nav>
+
+<!-- HERO CAROUSEL -->
+<div class="duvidas">
+
+    <div class="article">
+        <img src="imagem/faq1.png" >
+    </div>
+    <h6>Questões Frequentes</h6>
+  
+</div>
+
+
+
+  
+  <!-- Dúvidas frequentes -->
+<section class="faq-section" aria-label="Dúvidas Frequentes">
+  <div class="faq-wrap">
+ 
+    <div class="faq-list" id="faqList">
+
+      <!-- Item 1: aberto por padrão -->
+      <div class="faq-item open" data-index="1">
+        <div class="faq-head" tabindex="0" role="button" aria-expanded="true">
+          Como me torno um Agente PagaSó?
+          <i class="faq-icon fa-solid fa-minus"></i>
+        </div>
+        <div class="faq-body">
+          First, you need to know how much you can borrow. Knowing how much home you afford narrows down online home searching to suitable properties, thus no time is wasted considering homes that are not within your. (Pre-approvals also help prevent disappointment caused by falling in love unaffordable homes.)
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="faq-item" data-index="2">
+        <div class="faq-head" tabindex="0" role="button" aria-expanded="false">
+          Quais serviços estão disponíveis?
+          <i class="faq-icon fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-body">
+          Serviços de pagamentos, recargas, faturação, bilhética e outras integrações para agentes.
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="faq-item" data-index="3">
+        <div class="faq-head" tabindex="0" role="button" aria-expanded="false">
+          É necessário ter uma empresa para aderir?
+          <i class="faq-icon fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-body">
+          Não é obrigatório, mas a formalização facilita faturação e parcerias com grandes clientes.
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="faq-item" data-index="4">
+        <div class="faq-head" tabindex="0" role="button" aria-expanded="false">
+          Posso usar via computador?
+          <i class="faq-icon fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-body">
+          Sim — o painel é responsivo e foi pensado para telemóvel, tablet e computador.
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="faq-item" data-index="5">
+        <div class="faq-head" tabindex="0" role="button" aria-expanded="false">
+          Como obter lucros com a PagaSó?
+          <i class="faq-icon fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-body">
+          A margem depende do serviço; os agentes recebem comissões por transação registada no painel.
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="faq-item" data-index="5">
+        <div class="faq-head" tabindex="0" role="button" aria-expanded="false">
+          Como obter lucros com a PagaSó?
+          <i class="faq-icon fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-body">
+          A margem depende do serviço; os agentes recebem comissões por transação registada no painel.
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="faq-item" data-index="5">
+        <div class="faq-head" tabindex="0" role="button" aria-expanded="false">
+          Como obter lucros com a PagaSó?
+          <i class="faq-icon fa-solid fa-plus"></i>
+        </div>
+        <div class="faq-body">
+          A margem depende do serviço; os agentes recebem comissões por transação registada no painel.
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
+<br>
+
+
+<div class="container my-5">
+  <div class="card-duvidas">
+    <div class="conteudo">
+      <h2>Ainda tens<br>Dúvidas?</h2>
+      <p>
+        Entra em contacto com o nosso <strong>Apoio ao Cliente</strong>
+        ou Envia uma mensagem para o nosso <strong>WhatsApp!</strong>
+      </p>
+      <div class="envolver-btn">
+        <a href="tel:+244944090151" class="btn-contacto">
+            <img src="imagem/phone-duvida.png" alt="Telefone" width="20"> +244 944 090 151
+        </a>
+        <a href="https://wa.me/244944090151" class="btn-contacto ms-2">
+            <img src="imagem/what-duvida.png" alt="WhatsApp" width="20"> +244 944 090 151
+        </a>
+      </div>
+    </div>
+    <img src="imagem/faq.png" alt="Mascote" class="img-direita">
+  </div>
+</div><br><br>
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+
+    <!-- LOGO NO TOPO (centralizada) -->
+    <div class="footer-logo-wrap">
+      <img src="imagem/logo.svg" alt="PagaSó" class="footer-logo" width="209.24" height="66" />
+    </div>
+
+    <!-- GRID DE COLUNAS ABAIXO DO LOGO -->
+    <div class="footer-grid">
+      <!-- Col 1: Contactos / Endereços -->
+      <div class="footer-col" id="footer-cont">
+        <ul class="footer-contacts">
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span><strong>E-mail</strong><br>pagaso@tiv-tecnologia.com</span>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span><strong>Endereço Luanda</strong><br>Luanda, Talatona, Dolce Vita, Edifício 02.</span>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span><strong>Endereço Benguela</strong><br>Benguela, Rua Domingos do Ó, Edifício Acácias (1º Andar).</span>
+          </li>
+          
+        </ul>
+        <ul class="d-flex mt-2" id="flex-d">
+          
+          <li>
+            <i class="fas fa-phone-volume"></i>
+            <span><strong>Apoio ao Cliente!</strong><br>+244 944 090 151</span>
+          </li>
+          <li>
+            <i class="fab fa-whatsapp-square"></i>
+            <span><strong>Whatsapp</strong><br>+244 944 090 151</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Col 2: Links -->
+      <div class="footer-col">
+        <h4>LINKS</h4>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#servico">Serviços</a></li>
+          <li><a href="#vantagem">Vantagens</a></li>
+          <li><a href="#depoimento">Depoimentos</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Agentes -->
+      <div class="footer-col">
+        <h4>AGENTES</h4>
+        <ul>
+          <li><a href="https://app.pagaso.ao/criar-conta">Tornar-se Agente</a></li>
+          <li><a href="#vantagem">Vantagens</a></li>
+          <li><a href="servico.html">Margens de Lucro</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Ajuda + Social -->
+      <div class="footer-col">
+        <h4>AJUDA</h4>
+        <ul>
+          <li><a href="contacto.html">Contactos</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+
+        <h4  class="ns11">SIGA-NOS!</h4>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/pagaso.angola/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram-square"></i></a>
+          <a href="https://www.facebook.com/pagaso.angola/" target="_blank" aria-label="Facebook" class="cor"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://ao.linkedin.com/company/pagas%C3%B3?trk=ppro_cprof" target="_blank" aria-label="LinkedIn" class="cor"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM -->
+    <div class="footer-bottom">
+      <div class="footer-links">
+        <a href="termos.html">Termos e Condições</a>
+        <a href="politica.html">Política de privacidade</a>
+      </div>
+      <p>© 2025 Copyright PagaSó by TIV-Tecnologia, todos os direitos reservados, Made in<img src="imagem/band.png" alt="Angola" class="footer-flag" />
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/slider-swipper.js"></script>
+<script>
+  new Swiper(".slider-card-swipper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    spaceBetween: 20,
+    initialSlide: 2, // começa pelo slide do meio (ajuste conforme quantidade de slides)
+     loop: true, 
+     autoplay: {
+        delay: 3000,             // ⏳ muda a cada 3s
+        disableOnInteraction: false // continua mesmo após clicar/arrastar
+      },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+  });
+</script>
+
+<script>
+  document.querySelectorAll(".faq-head").forEach(head => {
+    head.addEventListener("click", () => {
+      const item = head.parentElement;
+      const icon = head.querySelector(".faq-icon");
+
+      if (item.classList.contains("open")) {
+        item.classList.remove("open");
+        head.setAttribute("aria-expanded", "false");
+        icon.classList.replace("fa-minus", "fa-plus");
+      } else {
+        // Fecha todos os outros
+        document.querySelectorAll(".faq-item").forEach(faq => {
+          faq.classList.remove("open");
+          faq.querySelector(".faq-head").setAttribute("aria-expanded", "false");
+          faq.querySelector(".faq-icon").classList.replace("fa-minus", "fa-plus");
+        });
+        // Abre o atual
+        item.classList.add("open");
+        head.setAttribute("aria-expanded", "true");
+        icon.classList.replace("fa-plus", "fa-minus");
+      }
+    });
+  });
+</script>
+
+
+
+</body>
+</html>
